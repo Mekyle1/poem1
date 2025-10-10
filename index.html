@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emoji Memory Match</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>🎮 Emoji Memory Match 🎮</h1>
+
+    <div class="game-stats">
+      <div>SCORE: <span id="score">0</span></div>
+      <div>MOVES: <span id="moves">0</span></div>
+      <div>TIME: <span id="time">00:00</span></div>
+    </div>
+
+    <p id="game-message">Click a card to begin.</p>
+
+    <div class="memory-grid" id="memory-grid"></div>
+
+    <div class="buttons">
+      <button class="pixel-btn" id="restart-btn">RESTART</button>
+      <button class="pixel-btn" id="push-card-btn">PUSH CARD</button>
+      <button class="pixel-btn" id="pop-card-btn">POP CARD</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
