@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>9th Monthsary</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        overflow:hidden;
+    }
+
+    .container{
+        width:350px;
+        background:white;
+        padding:30px;
+        border-radius:25px;
+        text-align:center;
+        box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        animation: float 3s ease-in-out infinite;
+    }
+
+    h1{
+        color:#ff4d6d;
+        margin-bottom:15px;
+        font-size:32px;
+    }
+
+    .heart{
+        font-size:50px;
+        animation: beat 1s infinite;
+    }
+
+    p{
+        color:#555;
+        margin:12px 0;
+        font-size:16px;
+        line-height:1.5;
+    }
+
+    .message{
+        margin-top:20px;
+        background:#fff0f3;
+        padding:15px;
+        border-radius:15px;
+    }
+
+    .footer{
+        margin-top:20px;
+        color:#ff4d6d;
+        font-weight:bold;
+    }
+
+    @keyframes beat{
+        0%{transform:scale(1);}
+        50%{transform:scale(1.2);}
+        100%{transform:scale(1);}
+    }
+
+    @keyframes float{
+        0%{transform:translateY(0);}
+        50%{transform:translateY(-10px);}
+        100%{transform:translateY(0);}
+    }
+
+    .bg-hearts span{
+        position:absolute;
+        color:white;
+        font-size:20px;
+        animation: rise 10s linear infinite;
+        bottom:-50px;
+    }
+
+    .bg-hearts span:nth-child(1){left:10%; animation-duration:8s;}
+    .bg-hearts span:nth-child(2){left:25%; animation-duration:12s;}
+    .bg-hearts span:nth-child(3){left:40%; animation-duration:10s;}
+    .bg-hearts span:nth-child(4){left:60%; animation-duration:9s;}
+    .bg-hearts span:nth-child(5){left:80%; animation-duration:11s;}
+
+    @keyframes rise{
+        0%{
+            transform:translateY(0) rotate(0deg);
+            opacity:1;
+        }
+        100%{
+            transform:translateY(-120vh) rotate(360deg);
+            opacity:0;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="bg-hearts">
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+</div>
+
+<div class="container">
+    <div class="heart">❤</div>
+
+    <h1>Happy 9th Monthsary</h1>
+
+    <p>
+        Thank you for the love, care, and happiness you always give me.
+    </p>
+
+    <div class="message">
+        <p>💌 9 months with you feels like my favorite love story.</p>
+        <p>💌 Every day with you is special.</p>
+        <p>💌 I’m lucky to have you in my life ehe.</p>
+        <p>💌 I LOVE YOU SOO MUCHIE!!!!!!!!!.</p>
+    </div>
+
+    <div class="footer">
+        -- Mekyle ❤
+    </div>
+</div>
+
+</body>
+</html>
